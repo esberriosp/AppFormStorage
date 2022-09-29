@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresa tus antecedentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-list-header lines="full">
+      <h3> Formulario de Ingreso </h3>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="stacked" >Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="data.nombre" placeholder="Ingresa tu nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" >Apellido</ion-label>
+      <ion-input type="text" [(ngModel)]="data.apellido" placeholder="Ingresa tu apellido"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type="text" [(ngModel)]="data.correo" placeholder="Ingresa tu email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="data.usuario"  placeholder="Ingresa tu usuario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type="password" [(ngModel)]="data.contrasena" placeholder="Ingresa tu contraseña"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button size="small" color="tertiary" expand="block" (click)="agregar()">Enviar</ion-button>
+  </div>
+</ion-content>

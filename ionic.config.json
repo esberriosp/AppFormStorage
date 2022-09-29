@@ -1,0 +1,7 @@
+{
+  "name": "AppFormStorage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
